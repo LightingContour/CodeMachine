@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_decode_choose"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lightingcontour.codemechine.DecodeChoose"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:inputType="textShortMessage|textLongMessage"
+        android:ems="10"
+        android:id="@+id/deinputcodes"
+        android:hint="Input Codes"
+        android:minLines="1"
+        android:maxLines="5"
+        tools:layout_conversion_absoluteX="16dp"
+        tools:layout_conversion_absoluteY="16dp"
+        tools:layout_conversion_absoluteWidth="352dp"
+        tools:layout_conversion_absoluteHeight="42dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <RadioGroup
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:id="@+id/demethodcho"
+        tools:layout_conversion_absoluteX="16dp"
+        tools:layout_conversion_absoluteY="58dp"
+        tools:layout_conversion_absoluteWidth="352dp"
+        tools:layout_conversion_absoluteHeight="32dp"
+        tools:layout_editor_absoluteY="58dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <RadioButton
+            android:text="ASCⅡ(H)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/deascbutton"
+            android:layout_weight="0.12"
+            android:onClick="deuse" />
+
+        <RadioButton
+            android:text="Morse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/demorbutton"
+            android:layout_weight="0.21"
+            android:onClick="deuse" />
+
+    </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/detextshow"
+        android:layout_width="336dp"
+        android:layout_height="373dp"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="@string/Text"
+        android:inputType="text"
+        android:maxLines="14"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical"
+        android:textSize="14sp"
+        tools:layout_conversion_absoluteX="16dp"
+        tools:layout_conversion_absoluteY="90dp"
+        tools:layout_conversion_absoluteWidth="352dp"
+        tools:layout_conversion_absoluteHeight="407dp"
+        tools:layout_editor_absoluteY="98dp"
+        tools:layout_editor_absoluteX="8dp" />
+
+
+</android.support.constraint.ConstraintLayout>

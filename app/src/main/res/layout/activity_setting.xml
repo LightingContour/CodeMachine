@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.lightingcontour.codemechine.Setting"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="@string/Settingtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:text="@string/Set_Inputsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="27dp"
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:text="@string/Set_Outputsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:id="@+id/textView6"
+        android:textSize="18sp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/outputsizeradio"
+        android:layout_width="wrap_content"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignLeft="@+id/inputsizeradio"
+        android:layout_alignStart="@+id/inputsizeradio">
+
+        <RadioButton
+            android:text="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/output14"
+            android:layout_weight="1"
+            android:onClick="outputsizechange" />
+
+        <RadioButton
+            android:text="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/output18"
+            android:layout_weight="1"
+            android:onClick="outputsizechange" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/inputsizeradio"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="37dp"
+        android:layout_marginEnd="37dp"
+        android:layout_above="@+id/textView6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <RadioButton
+            android:text="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/input14"
+            android:layout_weight="1"
+            android:onClick="inputsizechange" />
+
+        <RadioButton
+            android:text="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/input18"
+            android:layout_weight="1"
+            android:onClick="inputsizechange" />
+    </RadioGroup>
+
+</RelativeLayout>

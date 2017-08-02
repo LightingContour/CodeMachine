@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">CodeMechine</string>
+    <string name="CodeMechine">title</string>
+    <string name="Decode">decode</string>
+    <string name="Encrypt">encrypt</string>
+    <string name="Setting">setting</string>
+    <string name="Version">Version</string>
+    <string name="Text">Here will show your decoded text.\n &#040;Check your type&#041;\n Translate will start only when you type \'&#047;\'</string>
+    <string name="Settingtitle">Settings</string>
+    <string name="Set_Outputsize">Size of \noutput words</string>
+    <string name="Set_Inputsize">Size of \ninput words</string>
+    <string name="Versiontext">
+        <b>Version0.13</b>
+        \nChange bar type that can make clipboard possible.
+        \n3.23.2017
+        \n\n
+        <b>Version0.128</b>
+        \nTry to realize clipboard function
+        \n3.12.2017
+        \n\n
+        <b>Version0.12</b>
+        \nAccomplish Setting button
+        \n(Notice)Setting button bugs unfixed
+        \n11.13.2016
+        \n\n
+        <b>Version0.11</b>
+        \nFix serveral text bugs
+        \nAdd Version button
+        \nAccomplish Exit button
+        \n11.08.2016
+        \n\n
+        <b>Version0.10</b>
+        \nBuild up basic app
+        \n11.07.2016
+    </string>
+</resources>
